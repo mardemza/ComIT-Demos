@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Demos
 {
@@ -10,9 +6,9 @@ namespace Demos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("|==================================|");
-            Console.WriteLine("|     Instanciar Clase Player      |");
-            Console.WriteLine("|==================================|");
+            Console.WriteLine("|======================================|");
+            Console.WriteLine("|       Instanciar Clase Player        |");
+            Console.WriteLine("|======================================|");
             Console.WriteLine();
 
             // Instanciar la clase Player
@@ -27,9 +23,9 @@ namespace Demos
             Console.WriteLine($"  Nombre Completo: {player.FullName()}");
 
             Console.WriteLine();
-            Console.WriteLine("|==================================|");
-            Console.WriteLine("|     Instanciar Clase Team        |");
-            Console.WriteLine("|==================================|");
+            Console.WriteLine("|======================================|");
+            Console.WriteLine("|       Instanciar Clase Team          |");
+            Console.WriteLine("|======================================|");
             Console.WriteLine();
 
             var team = new Team() {Name = "Barcelona"};
@@ -43,8 +39,24 @@ namespace Demos
             Console.WriteLine($"  Nombre del Equipo: {team.Name}");
             // Llamo al metodo GetCount y retorno la cantidad de jugadores
             Console.WriteLine($"  Cantidad de Jugadores: {team.GetCount()}");
-            
+
             Console.WriteLine();
+            Console.WriteLine("|======================================|");
+            Console.WriteLine("|     Instanciar Clase Employe         |");
+            Console.WriteLine("|     que hereda de la clase User      |");
+            Console.WriteLine("|======================================|");
+            Console.WriteLine();
+
+            var employe1 = new Employe("rguemes","mipassword","Roberto","Guemes");
+
+            Console.WriteLine($"  Usuario: {employe1.Username}");
+            Console.WriteLine($"  Valido la contraseña (mipassword): {employe1.ValidUser("mipassword")}");
+            Console.WriteLine($"  Nombre del Empleado: {employe1.Name}");
+            Console.WriteLine($"  Apellido del Empleado: {employe1.Surname}");
+            Console.WriteLine($"  Numero de empleado: {employe1.NumberEmploye}");
+
+            Console.WriteLine();
+            Console.WriteLine("|======================================|");
 
             Console.ReadKey();
         }
