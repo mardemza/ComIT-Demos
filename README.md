@@ -1,4 +1,4 @@
-# ComIT-Demos
+# ComIT - Demos
 Comunidad IT - Proyectos de Ejemplo de Clase
 
 Solución creada con Visual Studio 2015
