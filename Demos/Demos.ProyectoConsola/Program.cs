@@ -12,7 +12,7 @@ namespace Demos
             Console.WriteLine();
 
             // Instanciar la clase Player
-            var player = new Player("Lionel","Messi");
+            var player = new Player("Gonzalo","Escudero");//Cambie el jugador Leonel Messi! :D 
 
             // Retorno el nombre utilizando el metodo Format del tipo string
             Console.WriteLine(string.Format("  Nombre: {0}",player.Name));
