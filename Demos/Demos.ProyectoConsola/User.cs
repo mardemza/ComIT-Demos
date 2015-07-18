@@ -17,6 +17,7 @@
             Password = EncryptPassword(password);
         }
 
+
         /// <summary>
         /// Metodo privado para simular una encriptacion de contraseña
         /// </summary>
